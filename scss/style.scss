@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
-
+@import 'switch-slider';
 
 :root {
     --primary-color: rgb(255, 92, 92);
@@ -40,6 +40,14 @@ $website-width: 980px;
 
 body {
     font-family: Nerko One, sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 .container {
@@ -113,13 +121,32 @@ h1, h2, p {
         justify-content: center;
         align-items: center;
         height: 100vh;
+    }
+}
 
-        h1 {
-            font-size: 5rem;
-        }
 
-        h2 {
-            font-size: 2rem;
+#illustrations {
+    text-align: center;
+    padding: 0 1rem;
+    margin: 0 auto;
+    .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .img-container {
+            width: 300px;
+            height: 400px;
+            background: var(--background);
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid var(--secondary-color);
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
@@ -127,66 +154,3 @@ h1, h2, p {
 
 
 
-
-
-
-// -- Switch Slider from W3 Schools
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: var(--primary-color);
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px var(--primary-color);
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
