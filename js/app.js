@@ -13,6 +13,7 @@ const App = (() => {
         darkMode: false
     }
 
+    // -- Event Listeners
     const listeners = () => {
         toggleTheme.addEventListener('change', event => {
             if(event.target.checked) {
@@ -32,6 +33,7 @@ const App = (() => {
         })
     }
 
+    // -- Render the DOM
     const render = () => {
         let markup = ''
 
@@ -57,6 +59,7 @@ const App = (() => {
         $images.innerHTML = markup;
     }
 
+    // -- Initialize
     const init = () => {
         listeners();
         render();
