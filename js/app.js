@@ -43,7 +43,7 @@ const App = (() => {
                 <img src="images/undraw_static_website_${state.darkMode ? "dark" : "light"}.svg" alt="">
             </div>
             <div class="img-container">
-                <h2>Code Thinker</h2>
+                <h2>Code Thinking</h2>
                 <img src="images/undraw_code_thinking_${state.darkMode ? "dark" : "light"}.svg" alt="">
             </div>
             <div class="img-container">
