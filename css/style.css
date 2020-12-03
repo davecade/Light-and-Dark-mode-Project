@@ -161,6 +161,12 @@ h1, h2, p {
   color: var(--on-background);
 }
 
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #title .container {
   display: flex;
   flex-direction: column;
@@ -218,11 +224,6 @@ h1, h2, p {
   }
   h2 {
     font-size: 2rem;
-  }
-  #title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   #title .container {
     display: flex;

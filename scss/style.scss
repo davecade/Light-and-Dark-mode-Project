@@ -114,6 +114,11 @@ h1, h2, p {
 }
 
 #title {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     .container {
         display: flex;
         flex-direction: column;
